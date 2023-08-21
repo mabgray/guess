@@ -127,7 +127,7 @@ const checkIfWin = function () {
     message.classList.add("win");
     message.innerHTML = `<p class="highlight">You guessed the correct word! Congrats!</p>`;
     startOver();
-  }code .
+  }
 
 };
 const startOver = function () {
@@ -140,7 +140,7 @@ playAgainButton.addEventListener("click", function () {
   // reset all original values - grab new word
   message.classList.remove("win");
   guessedLetters = [];
-  remainingGuesses = 8;
+  remainingGuesses = 3;
   remainingGuessesSpan.innerText = `${remainingGuesses} guesses`;
   guessedLettersElement.innerHTML = "";
   message.innerText = "";
